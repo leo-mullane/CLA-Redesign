@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Overview · CLA Global redesign prototype</title>
+<title>CLA Global redesign prototype · ClerksWell</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700;6..12,800;6..12,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700;6..12,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/clerkswell.css">
 </head>
-<body>
+<body class="cw">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M16 16l5.5 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
@@ -28,23 +29,81 @@
     <symbol id="i-mark" viewBox="0 0 48 48"><g fill="currentColor"><path d="M31.943,0A23.565,23.565,0,0,0,21.524,2.415a16.091,16.091,0,0,1,4.028-.5A15.674,15.674,0,0,1,35.68,5.741l-.206.175-2.3,1.945L33.006,8a12.2,12.2,0,0,0-7.453-2.608,11.665,11.665,0,0,0-8.513,3.521,11.615,11.615,0,0,0-3.53,8.5,11.668,11.668,0,0,0,3.53,8.533A11.82,11.82,0,0,0,26.8,29.406V13.243l.2-.172,2.942-2.484.315-.267V28.492a14.4,14.4,0,0,0,3.727-2.438l.151-.134,1.2,1.424.856,1.013.163.193a17.467,17.467,0,0,1-6.1,3.614v3.227h6.637l7.748-20.614,3.436.025L54.3,31.576A23.666,23.666,0,0,0,55.643,23.7V23.7A23.7,23.7,0,0,0,31.943,0" transform="translate(-8.243 0)"/><path d="M18.552,54.162c-.407.033-.824.05-1.243.05A15.006,15.006,0,0,1,6.34,49.681,15.005,15.005,0,0,1,1.81,38.712,16.08,16.08,0,0,1,2.259,34.9,23.582,23.582,0,0,0,0,45v0A23.7,23.7,0,0,0,23.7,68.7c.148,0,.295-.005.442-.01L27.35,60.15h-8.8Z" transform="translate(0 -21.298)"/><path d="M91.626,58.175,89.07,51.131l-2.542,7.01-1.662,4.511.02.008-.815,2.2-.649,1.727H94.685l-1.351-3.719Z" transform="translate(-50.903 -31.2)"/><path d="M72.277,107.782a23.67,23.67,0,0,0,13.732-8.117H75.323Z" transform="translate(-44.103 -60.815)"/></g></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></g></symbol><symbol id="i-print" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M7 9V3h10v6M7 17H4v-7h16v7h-3"/><rect x="7" y="14" width="10" height="7"/></g></symbol><symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 15V3M7 8l5-5 5 5M5 13v7h14v-7"/></g></symbol></defs>
 </svg>
-<div class="chrome" role="region" aria-label="Review controls">
-  <a class="home" href="index.html"><strong>CLA Global redesign</strong></a><span class="sub">Prototype</span>
-  <label class="sr" for="pagepick">Go to page</label><select id="pagepick" onchange="location.href=this.value"><option value="index.html" selected>Overview</option><option value="home.html">L1 Homepage</option><option value="why-cla-global.html">L2 Modular landing page</option><option value="advisory.html">L3 Service page</option><option value="contact.html">L4 Form page</option><option value="insights.html">L5 Article listing</option><option value="article.html">L6 Article detail</option><option value="leadership.html">L7 Team listing</option><option value="profile.html">L8 Person profile</option><option value="firms.html">L9 Firm directory</option><option value="firm-detail.html">L10 Member firm detail</option><option value="legal.html">L11 Legal / utility + 404</option><option value="search.html">L12 Search results</option><option value="campaign.html">L13 Campaign landing</option><option value="furniture.html">Page furniture F1–F5</option><option value="components.html">All components and variants</option></select>
-  <span class="fontnote" title="Museo Sans is the design system font. It is licensed (Adobe Fonts), so Nunito Sans is used in this mock-up. Sizes, weights and spacing follow the design system.">Font: Nunito Sans stand-in for Museo Sans</span>
-  <span class="spacer"></span>
-  <div class="seg" role="group" aria-label="Breakpoint"><button type="button" data-bp="desktop" aria-pressed="true">Desktop</button><button type="button" data-bp="mobile" aria-pressed="false">Mobile</button></div>
-  <label class="chk"><input type="checkbox" id="labels"> Show design system modules</label>
-</div>
 
-<section class="brief" aria-label="About this prototype"><div class="card">
-<h1>CLA Global redesign: full prototype</h1>
-<div><h2>What this is</h2><p>Every CLA Global page layout (L1–L13), page furniture item (F1–F5) and component (C1–C29), redesigned with CLA's new design system in Connect mode with the CLA Global logo. Numbering matches the inventory and the mapping spreadsheet.</p></div>
-<div><h2>Content and scope</h2><p>Copy, navigation, people and imagery are taken from claglobal.com as it is today (long pages are excerpted). Nothing assumes new back-end functionality; optional items are labelled where they appear.</p></div>
-<div><h2>How to review</h2><p>Use the page picker at the top, the <b>Desktop / Mobile</b> toggle (390px) and <b>Show design system modules</b> to see which DS module each section uses. The prototype is clickable: header, menus, search, cards and footer links move between pages.</p></div>
-<div class="fontbox"><h2>Font limitation</h2><p>The design system specifies <b>Museo Sans</b>, a licensed Adobe font that isn't available for this mock-up. <b>Nunito Sans</b> stands in for it, so letter shapes and widths will differ slightly from the final build. Sizes, weights, line heights and spacing follow the design system.</p></div>
-</div></section>
-<div class="hub"><h2>Page layouts</h2><div class="hubgrid"><a href="home.html"><i>L1</i><b>Homepage</b><span>Video hero, callouts, stats, insights carousel</span></a><a href="why-cla-global.html"><i>L2</i><b>Modular landing page</b><span>Why CLA Global? (also Who We Are, Brand and Values, Locations, Members Hub)</span></a><a href="advisory.html"><i>L3</i><b>Service page</b><span>Advisory (also Audit, Tax, Outsourcing, Assurance)</span></a><a href="contact.html"><i>L4</i><b>Form page</b><span>Contact Us and Join CLA Global</span></a><a href="insights.html"><i>L5</i><b>Article listing</b><span>Insights (Media is the same)</span></a><a href="article.html"><i>L6</i><b>Article detail</b><span>66 insight and news pages</span></a><a href="leadership.html"><i>L7</i><b>Team listing</b><span>Leadership</span></a><a href="profile.html"><i>L8</i><b>Person profile</b><span>78 leadership and contact profiles</span></a><a href="firms.html"><i>L9</i><b>Firm directory</b><span>Network and alliance firms</span></a><a href="firm-detail.html"><i>L10</i><b>Member firm detail</b><span>60 firm pages</span></a><a href="legal.html"><i>L11</i><b>Legal / utility + 404</b><span>Legal, privacy, cookie, terms pages and page-not-found</span></a><a href="search.html"><i>L12</i><b>Search results</b><span>Existing site search, now reachable</span></a><a href="campaign.html"><i>L13</i><b>Campaign landing page</b><span>LinkedIn campaign, with its own nav and footer</span></a></div><h2>Furniture and components</h2><div class="hubgrid"><a href="furniture.html"><i>F1–F5</i><b>Page furniture</b><span>Header states, mobile navigation, breadcrumb, cookie banner (footer on every page)</span></a><a href="components.html"><i>C1–C29</i><b>All components and variants</b><span>Every component and furniture item with all its variants on one page</span></a></div></div>
-<script src="js/main.js"></script>
+<header class="cw-top">
+  <div class="cw-wrap cw-top-in">
+    <a class="cw-logo" href="index.html"><img src="img/clerkswell-logo.png" alt="ClerksWell" width="132" height="72"></a>
+    <nav aria-label="Prototype"><a href="#layouts">Page layouts</a><a href="components.html">Components</a><a href="furniture.html">Page furniture</a><a href="#notes">Notes</a></nav>
+  </div>
+</header>
+
+<section class="cw-hero">
+  <div class="cw-wrap cw-hero-in">
+    <div>
+      <p class="cw-kicker">Website redesign prototype<span>.</span></p>
+      <h1>CLA Global, redesigned with the new design system</h1>
+      <p class="cw-lede">An interactive prototype of every claglobal.com page layout, component and piece of page furniture, rebuilt in CLA’s Connect design system and ready to review on desktop and mobile.</p>
+      <div class="cw-ctas"><a class="cw-btn" href="home.html">Start with the homepage</a><a class="cw-btn ghost" href="components.html">See every component</a></div>
+    </div>
+    <div class="cw-client">
+      <span class="cw-label">Prepared for</span>
+      <div class="cw-claflag"><svg viewBox="0 0 148.35 47.4" role="img" aria-label="CLA Global"><use href="#i-logo"/></svg></div>
+      <dl><div><dt>Prepared by</dt><dd>ClerksWell</dd></div><div><dt>Date</dt><dd>November 2026</dd></div><div><dt>Status</dt><dd>Draft for review</dd></div></dl>
+    </div>
+  </div>
+  <div class="cw-wrap"><ul class="cw-stats">
+    <li><b>13</b><span>page layouts</span></li><li><b>29</b><span>components</span></li><li><b>5</b><span>page furniture items</span></li><li><b>64</b><span>component variants</span></li>
+  </ul></div>
+</section>
+
+<main>
+<section class="cw-sec" id="layouts">
+  <div class="cw-wrap">
+    <div class="cw-head"><p class="cw-kicker">01<span>.</span></p><h2>Page layouts</h2><p>One redesign for each page type on the current site. Each one uses real content from claglobal.com and the template it maps to in the design system.</p></div>
+    <ul class="cw-cards"><li><a href="home.html"><span class="code">L1</span><b>Homepage</b><span class="d">Video hero, callouts, stats and the insights carousel</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="why-cla-global.html"><span class="code">L2</span><b>Modular landing page</b><span class="d">Why CLA Global?, plus Who We Are, Brand and Values and Members Hub</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="advisory.html"><span class="code">L3</span><b>Service page</b><span class="d">Advisory, plus Audit, Tax, Outsourcing and Assurance</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="contact.html"><span class="code">L4</span><b>Form page</b><span class="d">Contact Us and Join CLA Global</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="insights.html"><span class="code">L5</span><b>Article listing</b><span class="d">Insights, with Media using the same layout</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="article.html"><span class="code">L6</span><b>Article detail</b><span class="d">66 insight and news pages</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="leadership.html"><span class="code">L7</span><b>Team listing</b><span class="d">Leadership</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="profile.html"><span class="code">L8</span><b>Person profile</b><span class="d">78 leadership and contact profiles</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="firms.html"><span class="code">L9</span><b>Firm directory</b><span class="d">Network and alliance member firms</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="firm-detail.html"><span class="code">L10</span><b>Member firm detail</b><span class="d">60 firm pages</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="legal.html"><span class="code">L11</span><b>Legal and utility</b><span class="d">Legal, privacy, cookie and terms pages, plus the 404 page</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="search.html"><span class="code">L12</span><b>Search results</b><span class="d">The existing site search, now reachable from the header</span><span class="go" aria-hidden="true">→</span></a></li><li><a href="campaign.html"><span class="code">L13</span><b>Campaign landing page</b><span class="d">LinkedIn campaign, with its own header and footer</span><span class="go" aria-hidden="true">→</span></a></li></ul>
+  </div>
+</section>
+
+<section class="cw-sec alt">
+  <div class="cw-wrap">
+    <div class="cw-head"><p class="cw-kicker">02<span>.</span></p><h2>Components and furniture</h2><p>The building blocks behind every page, each shown on its own with all its variants.</p></div>
+    <div class="cw-feature">
+      <a href="components.html"><span class="code">C1–C29 · F1–F5</span><b>All components and variants</b><span class="d">Every component and furniture item on one page, with 64 variants and the design system module each one uses.</span><span class="go" aria-hidden="true">→</span></a>
+      <a href="furniture.html"><span class="code">F1–F5</span><b>Page furniture</b><span class="d">Header, menus and search, the mobile menu, the breadcrumb, the cookie banner and the footer, shown in their open states.</span><span class="go" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="cw-sec" id="notes">
+  <div class="cw-wrap cw-two">
+    <div>
+      <div class="cw-head"><p class="cw-kicker">03<span>.</span></p><h2>How to review</h2></div>
+      <ol class="cw-steps">
+        <li><b>Pick a page</b><span>Use the page picker at the top of any page, or the cards above.</span></li>
+        <li><b>Switch breakpoint</b><span><em>Desktop</em> shows 1440px; <em>Mobile</em> shows 390px.</span></li>
+        <li><b>Show modules</b><span>Turn on <em>Show design system modules</em> to label each section with its design system module.</span></li>
+        <li><b>Click around</b><span>Menus, search, the mobile menu, cards and footer links all work.</span></li>
+      </ol>
+    </div>
+    <div>
+      <div class="cw-head"><p class="cw-kicker">04<span>.</span></p><h2>Things to know</h2></div>
+      <ul class="cw-notes">
+        <li class="font"><b>Font</b><span>The design system uses <strong>Museo Sans</strong>, a licensed Adobe font. <strong>Nunito Sans</strong> stands in for it here, so letter shapes and widths differ slightly. Sizes, weights and spacing follow the design system.</span></li>
+        <li><b>Scope</b><span>The prototype keeps the current template functions and content and doesn’t assume any new back-end functionality. Items that would need back-end work are marked as phase 2.</span></li>
+        <li><b>Content</b><span>Copy, people and navigation come from claglobal.com as it is today. Long pages are shortened.</span></li>
+        <li><b>Imagery</b><span>Photos and videos load live from claglobal.com. If one can’t load, a labelled placeholder takes its place.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="cw-foot">
+  <div class="cw-wrap cw-foot-in">
+    <img src="img/clerkswell-logo.png" alt="ClerksWell" width="110" height="60">
+    <p>Prototype prepared by ClerksWell for CLA Global. Draft for review, not for publication.</p>
+    <p class="cw-ref">Read alongside the CLA Global design system mapping spreadsheet and visual reference document.</p>
+  </div>
+</footer>
 </body>
 </html>

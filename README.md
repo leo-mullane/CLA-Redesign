@@ -10,7 +10,7 @@ Interactive HTML prototype of every claglobal.com page layout, component and pag
 ## What's in it
 | File | What it shows |
 |---|---|
-| `index.html` | Overview, with links to everything below |
+| `index.html` | ClerksWell-branded overview, with links to everything below (styles in `css/clerkswell.css`, logo in `img/`) |
 | `home.html` | L1 Homepage |
 | `why-cla-global.html` | L2 Modular landing page (Why CLA Global?) |
 | `advisory.html` | L3 Service page (Advisory) |
