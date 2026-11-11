@@ -21,10 +21,10 @@ Interactive HTML prototype of every claglobal.com page layout, component and pag
 | `profile.html` | L8 Person profile |
 | `firms.html` | L9 Firm directory |
 | `firm-detail.html` | L10 Member firm detail |
-| `legal.html` | L11 Legal and utility pages, plus the 404 page |
+| `legal.html` | L11 Legal and utility pages (shown: Privacy Policy, with in-page anchor links), plus the 404 page |
 | `search.html` | L12 Search results |
 | `campaign.html` | L13 Campaign landing page |
-| `components.html` | Every component (C1–C29) and furniture item (F1–F5) with all its variants on one page |
+| `components.html` | Every component (C1–C29) and furniture item (F1–F5) with all its variants on one page. Each variant has its own anchor (e.g. `components.html#c10-2`) and is labelled with its design system module |
 | `furniture.html` | Page furniture open states: menus, search, mobile navigation, cookie banner |
 
 Every page has a page picker, a Desktop/Mobile toggle (1440px and 390px) and a "Show design system modules" toggle. Codes (L, C, F) match the inventory and the design system mapping spreadsheet. Content is taken from claglobal.com as it is today (long pages are excerpted), and no new back-end functionality is assumed.
