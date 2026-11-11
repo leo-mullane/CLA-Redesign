@@ -3,14 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CLA Global redesign · Proof of concept: page furniture and homepage</title>
+<title>Overview · CLA Global redesign prototype</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700;6..12,800;6..12,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-<!-- SVG symbols -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M16 16l5.5 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
@@ -28,358 +26,25 @@
     <symbol id="i-x" viewBox="0 0 24 24"><path d="M4 4h4.6l3.9 5.4L17.2 4H20l-6.2 7.1L20.5 20h-4.6l-4.3-5.9L6.3 20H3.5l6.8-7.7z" fill="currentColor"/></symbol>
     <symbol id="i-logo" viewBox="0 0 148.35 47.4"><g fill="currentColor"><path d="M165.96,33.942a11.2,11.2,0,0,1,7.645,2.606l-1.853,2.781a8.857,8.857,0,0,0-5.474-1.97c-4.6,0-7.066,3.185-7.066,7.066,0,4.46,3.041,7.356,6.892,7.356a7.74,7.74,0,0,0,5.154-2.143v-2.4H168.1V44.019h6.516V54.85h-3.186v-.984c0-.433.029-.869.029-.869H171.4a8.718,8.718,0,0,1-5.966,2.2c-5.416,0-10.079-4.2-10.079-10.656a10.372,10.372,0,0,1,10.6-10.6" transform="translate(-94.799 -20.711)"/><path d="M213.376,34.834h3.649V50.241c0,1.621.55,2.027,1.505,2.027.29,0,.551-.029.551-.029v3.215a8.515,8.515,0,0,1-1.159.086c-2.027,0-4.546-.521-4.546-4.749Z" transform="translate(-130.199 -21.256)"/><path d="M240.277,48.8c4.518,0,8.138,3.214,8.138,7.732,0,4.546-3.62,7.732-8.109,7.732-4.517,0-8.138-3.186-8.138-7.732,0-4.518,3.621-7.732,8.109-7.732m.029,12.336a4.609,4.609,0,1,0-4.4-4.6,4.39,4.39,0,0,0,4.4,4.6" transform="translate(-141.666 -29.779)"/><path d="M281.418,34.834H285.1v6.342c0,.724-.057,1.245-.057,1.245h.057a5.2,5.2,0,0,1,4.432-2.143c4,0,6.544,3.156,6.544,7.732,0,4.692-2.867,7.732-6.776,7.732a5.212,5.212,0,0,1-4.4-2.2h-.058a8.542,8.542,0,0,1,.058,1.014v.839h-3.476Zm7.24,17.81c2.027,0,3.706-1.65,3.706-4.575,0-2.809-1.506-4.634-3.677-4.634-1.911,0-3.706,1.39-3.706,4.662,0,2.288,1.216,4.547,3.677,4.547" transform="translate(-171.718 -21.256)"/><path d="M332.357,54.65h.491v-.2c0-1.94-1.215-2.607-2.837-2.607a7.909,7.909,0,0,0-4.055,1.419l-1.39-2.634a9.964,9.964,0,0,1,5.792-1.825c3.881,0,6.139,2.143,6.139,5.879v9.238h-3.387V62.7a9.56,9.56,0,0,1,.057-1.044h-.057a4.781,4.781,0,0,1-4.489,2.607c-2.636,0-5.01-1.65-5.01-4.6,0-4.691,6.342-5.01,8.747-5.01m-2.81,6.748c1.941,0,3.33-2.086,3.33-3.88v-.348h-.637c-1.882,0-4.923.26-4.923,2.316a1.97,1.97,0,0,0,2.23,1.912" transform="translate(-197.463 -29.777)"/><path d="M365.952,34.834H369.6V50.241c0,1.621.55,2.027,1.505,2.027.29,0,.551-.029.551-.029v3.215a8.515,8.515,0,0,1-1.159.086c-2.027,0-4.546-.521-4.546-4.749Z" transform="translate(-223.299 -21.256)"/><path d="M31.943,0A23.565,23.565,0,0,0,21.524,2.415a16.091,16.091,0,0,1,4.028-.5A15.674,15.674,0,0,1,35.68,5.741l-.206.175-2.3,1.945L33.006,8a12.2,12.2,0,0,0-7.453-2.608,11.665,11.665,0,0,0-8.513,3.521,11.615,11.615,0,0,0-3.53,8.5,11.668,11.668,0,0,0,3.53,8.533A11.82,11.82,0,0,0,26.8,29.406V13.243l.2-.172,2.942-2.484.315-.267V28.492a14.4,14.4,0,0,0,3.727-2.438l.151-.134,1.2,1.424.856,1.013.163.193a17.467,17.467,0,0,1-6.1,3.614v3.227h6.637l7.748-20.614,3.436.025L54.3,31.576A23.666,23.666,0,0,0,55.643,23.7V23.7A23.7,23.7,0,0,0,31.943,0" transform="translate(-8.243 0)"/><path d="M18.552,54.162c-.407.033-.824.05-1.243.05A15.006,15.006,0,0,1,6.34,49.681,15.005,15.005,0,0,1,1.81,38.712,16.08,16.08,0,0,1,2.259,34.9,23.582,23.582,0,0,0,0,45v0A23.7,23.7,0,0,0,23.7,68.7c.148,0,.295-.005.442-.01L27.35,60.15h-8.8Z" transform="translate(0 -21.298)"/><path d="M91.626,58.175,89.07,51.131l-2.542,7.01-1.662,4.511.02.008-.815,2.2-.649,1.727H94.685l-1.351-3.719Z" transform="translate(-50.903 -31.2)"/><path d="M72.277,107.782a23.67,23.67,0,0,0,13.732-8.117H75.323Z" transform="translate(-44.103 -60.815)"/></g></symbol>
     <symbol id="i-mark" viewBox="0 0 48 48"><g fill="currentColor"><path d="M31.943,0A23.565,23.565,0,0,0,21.524,2.415a16.091,16.091,0,0,1,4.028-.5A15.674,15.674,0,0,1,35.68,5.741l-.206.175-2.3,1.945L33.006,8a12.2,12.2,0,0,0-7.453-2.608,11.665,11.665,0,0,0-8.513,3.521,11.615,11.615,0,0,0-3.53,8.5,11.668,11.668,0,0,0,3.53,8.533A11.82,11.82,0,0,0,26.8,29.406V13.243l.2-.172,2.942-2.484.315-.267V28.492a14.4,14.4,0,0,0,3.727-2.438l.151-.134,1.2,1.424.856,1.013.163.193a17.467,17.467,0,0,1-6.1,3.614v3.227h6.637l7.748-20.614,3.436.025L54.3,31.576A23.666,23.666,0,0,0,55.643,23.7V23.7A23.7,23.7,0,0,0,31.943,0" transform="translate(-8.243 0)"/><path d="M18.552,54.162c-.407.033-.824.05-1.243.05A15.006,15.006,0,0,1,6.34,49.681,15.005,15.005,0,0,1,1.81,38.712,16.08,16.08,0,0,1,2.259,34.9,23.582,23.582,0,0,0,0,45v0A23.7,23.7,0,0,0,23.7,68.7c.148,0,.295-.005.442-.01L27.35,60.15h-8.8Z" transform="translate(0 -21.298)"/><path d="M91.626,58.175,89.07,51.131l-2.542,7.01-1.662,4.511.02.008-.815,2.2-.649,1.727H94.685l-1.351-3.719Z" transform="translate(-50.903 -31.2)"/><path d="M72.277,107.782a23.67,23.67,0,0,0,13.732-8.117H75.323Z" transform="translate(-44.103 -60.815)"/></g></symbol>
-  </defs>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></g></symbol><symbol id="i-print" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M7 9V3h10v6M7 17H4v-7h16v7h-3"/><rect x="7" y="14" width="10" height="7"/></g></symbol><symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 15V3M7 8l5-5 5 5M5 13v7h14v-7"/></g></symbol></defs>
 </svg>
-
 <div class="chrome" role="region" aria-label="Review controls">
-  <strong>CLA Global redesign</strong><span class="sub">Batch 1 · Page furniture and homepage</span>
-  <nav aria-label="Jump to"><a href="#homepage">Homepage</a><a href="#furniture">Page furniture</a></nav>
-  <span class="fontnote" title="Museo Sans is the design system font. It is licensed (Adobe Fonts), so Nunito Sans is used in this mock-up. Typography metrics are otherwise as specified.">Font: Nunito Sans stand-in for Museo Sans</span>
+  <a class="home" href="index.html"><strong>CLA Global redesign</strong></a><span class="sub">Prototype</span>
+  <label class="sr" for="pagepick">Go to page</label><select id="pagepick" onchange="location.href=this.value"><option value="index.html" selected>Overview</option><option value="home.html">L1 Homepage</option><option value="why-cla-global.html">L2 Modular landing page</option><option value="advisory.html">L3 Service page</option><option value="contact.html">L4 Form page</option><option value="insights.html">L5 Article listing</option><option value="article.html">L6 Article detail</option><option value="leadership.html">L7 Team listing</option><option value="profile.html">L8 Person profile</option><option value="firms.html">L9 Firm directory</option><option value="firm-detail.html">L10 Member firm detail</option><option value="legal.html">L11 Legal / utility + 404</option><option value="search.html">L12 Search results</option><option value="campaign.html">L13 Campaign landing</option><option value="furniture.html">Page furniture F1–F5</option><option value="components.html">All components and variants</option></select>
+  <span class="fontnote" title="Museo Sans is the design system font. It is licensed (Adobe Fonts), so Nunito Sans is used in this mock-up. Sizes, weights and spacing follow the design system.">Font: Nunito Sans stand-in for Museo Sans</span>
   <span class="spacer"></span>
-  <div class="seg" role="group" aria-label="Breakpoint">
-    <button type="button" data-bp="desktop" aria-pressed="true">Desktop</button>
-    <button type="button" data-bp="mobile" aria-pressed="false">Mobile</button>
-  </div>
+  <div class="seg" role="group" aria-label="Breakpoint"><button type="button" data-bp="desktop" aria-pressed="true">Desktop</button><button type="button" data-bp="mobile" aria-pressed="false">Mobile</button></div>
   <label class="chk"><input type="checkbox" id="labels"> Show design system modules</label>
 </div>
 
-<section class="brief" aria-label="About this mock-up">
-  <div class="card">
-    <h1>Batch 1: header, footer, mobile navigation, breadcrumb, cookie banner and the homepage</h1>
-    <div><h2>Design system</h2><p>CLA's new design system in Connect mode (navy, riptide, celadon), using the CLA Global logo. Every section is built from an existing design system module. Turn on <b>Show design system modules</b> to see which one.</p></div>
-    <div><h2>Content</h2><p>All copy, navigation and stats are taken from claglobal.com as it is today. Nothing has been rewritten and no new back-end features are assumed.</p></div>
-    <div><h2>Imagery</h2><p>Photography, the hero video and the YouTube video are pulled live from claglobal.com, so they are the images in use today. If one can't load, a labelled tinted block appears in its place.</p></div>
-    <div class="fontbox"><h2>Font limitation</h2><p>The design system specifies <b>Museo Sans</b>, a licensed Adobe font that isn't available for this mock-up. <b>Nunito Sans</b> stands in for it, so letter shapes and widths will differ slightly from the final build. Sizes, weights, line heights and spacing follow the design system.</p></div>
-    <div><h2>Interaction</h2><p>Try the menus, search and mobile drawer. <b>Mobile</b> shows the same page at 390px.</p></div>
-  </div>
-</section>
-
-<!-- =================== HOMEPAGE =================== -->
-<div class="sheet-title" id="homepage"><h2>L1 Homepage</h2><span>claglobal.com/ · built from DS modules, top to bottom</span></div>
-<div class="stage">
-<div class="frame resp">
-<div class="mock">
-
-  <div class="mod" style="position:relative">
-  <header class="hdr rev over" data-header>
-    <span class="tag">F1 Header · DS nav (default-reversed, over hero)</span>
-    <div class="util wrap">
-      <button type="button" aria-label="Choose language"><svg><use href="#i-globe"/></svg>Language<svg style="width:12px;height:12px"><use href="#i-chev"/></svg></button>
-      <div class="right">
-        <a href="#"><svg><use href="#i-user"/></svg>Members Hub login</a>
-        <span class="dot" aria-hidden="true"></span>
-        <a href="#">Join CLA Global</a>
-      </div>
-    </div>
-    <div class="mainrow wrap">
-      <a class="logo" href="#" aria-label="CLA Global home"><svg viewBox="0 0 148.35 47.4"><use href="#i-logo"/></svg></a>
-      <nav class="primary-nav" aria-label="Main">
-        <ul>
-          <li><button type="button" aria-expanded="false" data-menu="who">Who We Are<svg><use href="#i-chev"/></svg></button></li>
-          <li><button type="button" aria-expanded="false" data-menu="what">What We Do<svg><use href="#i-chev"/></svg></button></li>
-          <li><a href="#">Insights</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">Locations</a></li>
-        </ul>
-        <div class="nav-tools">
-          <button class="iconbtn" type="button" aria-label="Search" aria-expanded="false" data-search><svg><use href="#i-search"/></svg></button>
-          <button class="iconbtn burger" type="button" aria-label="Open menu" data-burger><svg><use href="#i-menu"/></svg></button>
-          <a class="btn btn-contact" href="#">Contact us</a>
-        </div>
-      </nav>
-    </div>
-    <div class="mega" hidden data-panel="who">
-      <div class="left"><ul>
-        <li><a href="#" aria-current="true">Who We Are</a></li><li><a href="#">What We Do</a></li><li><a href="#">Insights</a></li><li><a href="#">Media</a></li><li><a href="#">Locations</a></li><li><a href="#">Contact Us</a></li>
-      </ul></div>
-      <div class="right">
-        <div><h3>Who We Are</h3><p>CLA Global is a professional services network designed to help realize the ambitions of privately owned, fast-growing, mid-market clients with cross-border needs.</p><a class="btn btn-secondary" href="#">Who We Are overview</a></div>
-        <ul class="links">
-          <li><a href="#">Why CLA Global?<svg><use href="#i-arrow"/></svg></a></li>
-          <li><a href="#">Our Brand and Values<svg><use href="#i-arrow"/></svg></a></li>
-          <li><a href="#">Leadership<svg><use href="#i-arrow"/></svg></a></li>
-          <li><a href="#">Join CLA Global<svg><use href="#i-arrow"/></svg></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="mega" hidden data-panel="what">
-      <div class="left"><ul>
-        <li><a href="#">Who We Are</a></li><li><a href="#" aria-current="true">What We Do</a></li><li><a href="#">Insights</a></li><li><a href="#">Media</a></li><li><a href="#">Locations</a></li><li><a href="#">Contact Us</a></li>
-      </ul></div>
-      <div class="right">
-        <div><h3>What We Do</h3><p>Member firms provide audit, tax, advisory and outsourcing services to clients of all sizes.</p><a class="btn btn-secondary" href="#">What We Do overview</a></div>
-        <ul class="links">
-          <li><a href="#">Audit<svg><use href="#i-arrow"/></svg></a></li>
-          <li class="sub"><a href="#">Assurance<svg><use href="#i-arrow"/></svg></a></li>
-          <li><a href="#">Tax<svg><use href="#i-arrow"/></svg></a></li>
-          <li><a href="#">Advisory<svg><use href="#i-arrow"/></svg></a></li>
-          <li><a href="#">Outsourcing<svg><use href="#i-arrow"/></svg></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="searchp" hidden data-panel="search">
-      <label for="q1">Search CLA Global</label>
-      <form role="search" onsubmit="event.preventDefault()"><input id="q1" type="search" placeholder="Search insights, services, locations and people"><button class="go" type="submit" aria-label="Search"><svg><use href="#i-search"/></svg></button></form>
-      <div class="pop"><b>Popular:</b><a class="chip" href="#">Tax</a><a class="chip" href="#">Network firms</a><a class="chip" href="#">Leadership</a><a class="chip" href="#">Join CLA Global</a></div>
-    </div>
-  </header>
-
-  <section class="hero" aria-labelledby="hero-h">
-    <span class="tag" style="top:150px">C1 Video hero → DS hero-video-background (split headline)</span>
-    <div class="circle" aria-hidden="true"><div class="ph dark has-media"><video id="heroVideo" autoplay muted loop playsinline poster="https://www.claglobal.com/media/1qohr140/network-firms.jpg?width=900&amp;height=900&amp;quality=80"><source src="https://cla-global.b-cdn.net/cla_herobanner_B_0.2-1.mp4" type="video/mp4"></video><span>Existing hero video · city skyline loop</span></div></div>
-    <div class="inner wrap">
-      <h1 id="hero-h">For Those Who<span class="l2">Drive Growth.</span></h1>
-      <div>
-        <p>CLA Global is a professional services network designed to help realize the ambitions of privately owned, fast-growing, mid-market clients with cross-border needs.</p>
-        <div class="ctas"><a class="btn btn-primary" href="#">Join CLA Global</a><a class="btn btn-rev" href="#">Explore member benefits</a></div>
-      </div>
-    </div>
-    <button class="pause" type="button" aria-label="Pause background video" data-pause><svg><use href="#i-pause"/></svg></button>
-  </section>
-  </div>
-
-  <section class="lead mod wrap" aria-label="Introduction">
-    <span class="tag">C8 Intro block → DS content-richtext (lead paragraph)</span>
-    <p>Our member firms are united by a shared spirit of collegiality and exchange, a desire to shape the future of our network, and a drive to accelerate the growth of their clients and people.</p>
-  </section>
-
-  <section class="callouts section wrap mod" style="padding-top:0" aria-labelledby="why-h">
-    <span class="tag">C9 Feature trio → DS content-callouts (ordered)</span>
-    <div class="head"><h2 class="h-2" id="why-h">Why Join CLA Global?</h2><a class="btn btn-secondary" href="#">Explore member benefits</a></div>
-    <ol>
-      <li><span class="num" aria-hidden="true">01</span><h3>A Platform For Growth</h3><p>Built for firms that want to do more and move faster, our flexible network supports scalability while offering members the chance to shape our future.</p></li>
-      <li><span class="num" aria-hidden="true">02</span><h3>Shared Ambition</h3><p>Our members all share the entrepreneurial spirit and international ambitions of their privately owned, fast-growing, mid-market clients.</p></li>
-      <li><span class="num" aria-hidden="true">03</span><h3>Accelerated Change</h3><p>We value a growth mindset. Together, we pool ideas, investments, and technology to upskill member firm teams, evolve client offerings, and grow.</p></li>
-    </ol>
-  </section>
-
-  <section class="pf mod" aria-labelledby="about-h">
-    <span class="tag">C10 Full-width image + text → DS content-primary-feature (navy)</span>
-    <div class="txt">
-      <h2 id="about-h">About CLA Global</h2>
-      <p>CLA Global was founded on July 1, 2022 by CliftonLarsonAllen LLP and S&amp;W (previously Evelyn Partners). Member firms provide services to clients of all sizes, with a particular emphasis on privately owned, fast-growing, mid-market clients with cross-border needs.</p>
-      <div><a class="btn btn-primary" href="#">Who We Are</a></div>
-    </div>
-    <div class="img"><div class="ph has-media"><img src="https://www.claglobal.com/media/puqkgugt/tax.jpg?width=1200&amp;height=1000&amp;quality=80" alt="" loading="lazy" onerror="this.remove()"><span>Existing photo · "About CLA Global"</span></div></div>
-  </section>
-
-  <section class="stats section mod" aria-labelledby="stats-h">
-    <span class="tag">C12 Stats counter → DS content-stats (3-up)</span>
-    <div class="wrap">
-      <h2 class="h-2" id="stats-h">The Power Behind Our Membership</h2>
-      <dl>
-        <div class="stat"><dt>Personnel</dt><dd>15,000<sup>+</sup></dd></div>
-        <div class="stat" style="border-left-color:var(--navy)"><dt>Offices</dt><dd>235<sup>+</sup></dd></div>
-        <div class="stat" style="border-left-color:var(--celadon)"><dt>Partners and equivalents</dt><dd>1,600<sup>+</sup></dd></div>
-      </dl>
-    </div>
-  </section>
-
-  <section class="section wrap mod" aria-labelledby="vid-h">
-    <span class="tag">C11 Split content (video) → DS content-featured-single (media left)</span>
-    <div class="fs">
-      <div class="vid" data-yt="G0JlEauO5gA"><div class="ph dark has-media"><img src="https://i.ytimg.com/vi/G0JlEauO5gA/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span>Existing YouTube video · "Why join CLA Global?"</span></div><button class="play" type="button" aria-label="Play video: Why join CLA Global?" data-play><svg><use href="#i-play"/></svg></button></div>
-      <div>
-        <h2 class="h-2" id="vid-h">Why join CLA Global?</h2>
-        <p>Ours is a culture of diversity and inclusion that uses our combined strengths as our greatest competitive advantage.</p>
-        <p>Professionals in our member firms support clients by speaking their language and serving as their eyes and ears from a business, regulatory and tax perspective so they can help them to cross borders confidently and efficiently.</p>
-        <button class="btn btn-tertiary" type="button" data-play><svg><use href="#i-play"/></svg>Watch the video</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="crow cloud section mod" aria-labelledby="ins-h">
-    <span class="tag">C17 Insight carousel → DS carousel-row (4 cards, cloud)</span>
-    <div class="wrap">
-      <div class="head">
-        <div><h2 class="h-2" id="ins-h">Insights and Client Case Studies</h2><p>Explore our insights and case studies to see how CLA Global member firms help businesses and individuals navigate financial challenges, organise operations, and achieve their strategic goals.</p></div>
-        <div class="tools"><button class="arrow" type="button" aria-label="Previous"><svg><use href="#i-left"/></svg></button><button class="arrow" type="button" aria-label="Next"><svg><use href="#i-arrow"/></svg></button><a class="btn btn-primary" href="#">All insights</a></div>
-      </div>
-      <ul class="cards">
-        <li class="card"><a href="#"><div class="ph has-media"><img src="https://www.claglobal.com/media/fajbawjo/implementation-of-pillar-two-global-tax-system-accelerates-website.jpg?width=600&amp;height=840&amp;quality=80" alt="" loading="lazy" onerror="this.remove()"><span>Existing image · Pillar Two</span></div><div class="meta"><span class="type">Insight</span>30 March 2026</div><h3>Implementation of Pillar Two global tax system accelerates</h3><span class="textlink">Read<svg><use href="#i-arrow"/></svg></span></a></li>
-        <li class="card"><a href="#"><div class="ph has-media"><img src="https://www.claglobal.com/media/aqcnicy2/building-cyber-resilience-website-2.jpg?width=600&amp;height=840&amp;quality=80" alt="" loading="lazy" onerror="this.remove()"><span>Existing image · Cyber resilience</span></div><div class="meta"><span class="type">Insight</span>28 May 2026</div><h3>Building Cyber Resilience: A Robust Roadmap for the Future</h3><span class="textlink">Read<svg><use href="#i-arrow"/></svg></span></a></li>
-        <li class="card"><a href="#"><div class="ph has-media"><img src="https://www.claglobal.com/media/b5seo5gk/succession-planning-report-cla-global-ts-sw-updates_9-july-2026-web.jpg?width=600&amp;height=840&amp;quality=80" alt="" loading="lazy" onerror="this.remove()"><span>Existing image · Succession planning</span></div><div class="meta"><span class="type">Insight</span>13 July 2026</div><h3>Succession Planning: Ownership-Focused Continuity and Legacy Preservation</h3><span class="textlink">Read<svg><use href="#i-arrow"/></svg></span></a></li>
-        <li class="card"><a href="#"><div class="ph has-media"><img src="https://www.claglobal.com/media/ro4ott3y/brazils-new-financial-cybersecurity-rules-align-to-global-standards_website.jpg?width=600&amp;height=840&amp;quality=80" alt="" loading="lazy" onerror="this.remove()"><span>Existing image · Brazil cybersecurity</span></div><div class="meta"><span class="type">Insight</span>28 July 2026</div><h3>Brazil’s New Financial Cybersecurity Rules Align to Global Standards</h3><span class="textlink">Read<svg><use href="#i-arrow"/></svg></span></a></li>
-      </ul>
-      <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-    </div>
-  </section>
-
-  <section class="phs mod" aria-labelledby="join-h">
-    <span class="tag">C8 Closing CTA → DS promo-human-stories</span>
-    <div class="inner wrap">
-      <div class="imgs" aria-hidden="true"><div class="ph a has-media"><img src="https://www.claglobal.com/media/5cipdlwe/about-62.jpg?width=900&amp;height=700&amp;quality=80" alt="" loading="lazy" onerror="this.remove()"><span>Existing photo · member firm team</span></div><div class="ph dark b has-media"><img src="https://www.claglobal.com/media/rwwbhs3a/alliance-firms.jpg?width=700&amp;height=520&amp;quality=80" alt="" loading="lazy" onerror="this.remove()"><span>Existing photo · collaboration</span></div></div>
-      <div>
-        <h2 id="join-h">Become a Member of CLA Global</h2>
-        <p>Join our professional services network designed to help realize the ambitions of privately owned, fast-growing, mid-market clients with cross-border needs.</p>
-        <p>It's an opportunity for you to increase collaboration and gain exposure to new skills and capabilities, bring career opportunities and build new relationships.</p>
-        <a class="btn btn-primary" href="#">Join CLA Global</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="ftr mod">
-    <span class="tag">F3 Footer → DS footer (default; sign-up band repurposed as Join CTA)</span>
-    <div class="band"><div class="wrap"><p>Join the network for those who drive growth.</p><a class="btn btn-primary" href="#">Join CLA Global</a></div></div>
-    <div class="mark" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#i-mark"/></svg></div>
-    <div class="body wrap">
-      <div class="brand">
-        <a class="logo" href="#" aria-label="CLA Global home"><svg viewBox="0 0 148.35 47.4"><use href="#i-logo"/></svg></a>
-        <p>A global network and alliance of independent accounting and advisory firms.</p>
-        <a class="badge" href="#"><i aria-hidden="true"></i>Member of<br>Forum of Firms</a>
-      </div>
-      <div class="fcol"><h3><button type="button" aria-expanded="false">Who We Are<svg><use href="#i-chev"/></svg></button></h3><ul>
-        <li><a href="#">Why CLA Global?</a></li><li><a href="#">Our Brand and Values</a></li><li><a href="#">Leadership</a></li><li><a href="#">Join CLA Global</a></li></ul></div>
-      <div class="fcol"><h3><button type="button" aria-expanded="false">What We Do<svg><use href="#i-chev"/></svg></button></h3><ul>
-        <li><a href="#">Audit</a></li><li><a href="#">Tax</a></li><li><a href="#">Advisory</a></li><li><a href="#">Outsourcing</a></li></ul></div>
-      <div class="fcol"><h3><button type="button" aria-expanded="false">Explore<svg><use href="#i-chev"/></svg></button></h3><ul>
-        <li><a href="#">Insights</a></li><li><a href="#">Media</a></li><li><a href="#">Locations</a></li><li><a href="#">Contact Us</a></li><li><a href="#">CLA Global Members Hub</a></li></ul></div>
-      <div class="fcol connect"><h3><button type="button" tabindex="-1">Connect<svg><use href="#i-chev"/></svg></button></h3>
-        <div class="social"><a href="#" aria-label="CLA Global on LinkedIn"><svg><use href="#i-in"/></svg></a><a href="#" aria-label="CLA Global on YouTube"><svg><use href="#i-yt"/></svg></a><a href="#" aria-label="CLA Global on X"><svg><use href="#i-x"/></svg></a></div></div>
-    </div>
-    <div class="legal wrap">
-      <ul>
-        <li><a href="#">Legal Disclaimer</a></li><li><a href="#">Terms of Use and Disclaimers</a></li><li><a href="#">Email Disclaimer</a></li><li><a href="#">CLA Global Limited – Privacy Policy</a></li><li><a href="#">Cookie Policy</a></li><li><a href="#">Cookie settings</a></li>
-      </ul>
-      <p>CLA Global Brand Limited is a company limited by guarantee incorporated in England and Wales (registered number 14032779) with its registered office at Floor 3, 8 Bishopsgate, London, United Kingdom, EC2N 4BQ. All rights reserved. Its affiliates include CLA Global Services Limited, a company limited by guarantee incorporated in England and Wales (registration number 14032629) and CLA Global Limited (“CLA Global”), a company limited by guarantee incorporated in England and Wales (registration number 14032746) and refers to a global network and alliance of independent member firms.</p>
-      <p>CLA Global is not a professional services organization and does not provide any services to clients. Services are provided by the network and alliance members of CLA Global, each of which is a separate and independent legal entity. For more detail about CLA Global’s structure, please see CLAglobal.com/disclaimer.</p>
-      <p>©2026 CLA Global Brand Limited.</p>
-    </div>
-  </footer>
-
-</div>
-</div>
-</div>
-
-<!-- =================== PAGE FURNITURE =================== -->
-<div class="sheet-title" id="furniture"><h2>Page furniture</h2><span>F1–F5 · the footer (F3) is shown at the bottom of the homepage</span></div>
-<div class="stage">
-
-  <div class="specimen-label">F1 Header · default (white) with “What We Do” open</div>
-  <div class="frame resp"><div class="mock">
-    <div class="mod" style="min-height:520px">
-    <header class="hdr" data-header>
-      <span class="tag">DS nav (default) + open panel</span>
-      <div class="util wrap">
-        <button type="button" aria-label="Choose language"><svg><use href="#i-globe"/></svg>Language<svg style="width:12px;height:12px"><use href="#i-chev"/></svg></button>
-        <div class="right"><a href="#"><svg><use href="#i-user"/></svg>Members Hub login</a><span class="dot" aria-hidden="true"></span><a href="#">Join CLA Global</a></div>
-      </div>
-      <div class="mainrow wrap">
-        <a class="logo" href="#" aria-label="CLA Global home"><svg viewBox="0 0 148.35 47.4"><use href="#i-logo"/></svg></a>
-        <nav class="primary-nav" aria-label="Main (specimen)">
-          <ul>
-            <li><button type="button" aria-expanded="false" data-menu="who">Who We Are<svg><use href="#i-chev"/></svg></button></li>
-            <li><button type="button" aria-expanded="true" data-menu="what">What We Do<svg><use href="#i-chev"/></svg></button></li>
-            <li><a href="#">Insights</a></li><li><a href="#">Media</a></li><li><a href="#">Locations</a></li>
-          </ul>
-          <div class="nav-tools">
-            <button class="iconbtn" type="button" aria-label="Search" aria-expanded="false" data-search><svg><use href="#i-search"/></svg></button>
-            <button class="iconbtn burger" type="button" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
-            <a class="btn btn-contact" href="#">Contact us</a>
-          </div>
-        </nav>
-      </div>
-      <div class="mega" hidden data-panel="who">
-        <div class="left"><ul><li><a href="#" aria-current="true">Who We Are</a></li><li><a href="#">What We Do</a></li><li><a href="#">Insights</a></li><li><a href="#">Media</a></li><li><a href="#">Locations</a></li><li><a href="#">Contact Us</a></li></ul></div>
-        <div class="right"><div><h3>Who We Are</h3><p>CLA Global is a professional services network designed to help realize the ambitions of privately owned, fast-growing, mid-market clients with cross-border needs.</p><a class="btn btn-secondary" href="#">Who We Are overview</a></div>
-          <ul class="links"><li><a href="#">Why CLA Global?<svg><use href="#i-arrow"/></svg></a></li><li><a href="#">Our Brand and Values<svg><use href="#i-arrow"/></svg></a></li><li><a href="#">Leadership<svg><use href="#i-arrow"/></svg></a></li><li><a href="#">Join CLA Global<svg><use href="#i-arrow"/></svg></a></li></ul></div>
-      </div>
-      <div class="mega" data-panel="what">
-        <div class="left"><ul><li><a href="#">Who We Are</a></li><li><a href="#" aria-current="true">What We Do</a></li><li><a href="#">Insights</a></li><li><a href="#">Media</a></li><li><a href="#">Locations</a></li><li><a href="#">Contact Us</a></li></ul></div>
-        <div class="right"><div><h3>What We Do</h3><p>Member firms provide audit, tax, advisory and outsourcing services to clients of all sizes.</p><a class="btn btn-secondary" href="#">What We Do overview</a></div>
-          <ul class="links"><li><a href="#">Audit<svg><use href="#i-arrow"/></svg></a></li><li class="sub"><a href="#">Assurance<svg><use href="#i-arrow"/></svg></a></li><li><a href="#">Tax<svg><use href="#i-arrow"/></svg></a></li><li><a href="#">Advisory<svg><use href="#i-arrow"/></svg></a></li><li><a href="#">Outsourcing<svg><use href="#i-arrow"/></svg></a></li></ul></div>
-      </div>
-      <div class="searchp" hidden data-panel="search">
-        <label for="q2">Search CLA Global</label>
-        <form role="search" onsubmit="event.preventDefault()"><input id="q2" type="search" placeholder="Search insights, services, locations and people"><button class="go" type="submit" aria-label="Search"><svg><use href="#i-search"/></svg></button></form>
-        <div class="pop"><b>Popular:</b><a class="chip" href="#">Tax</a><a class="chip" href="#">Network firms</a><a class="chip" href="#">Leadership</a><a class="chip" href="#">Join CLA Global</a></div>
-      </div>
-    </header>
-    </div>
-  </div></div>
-
-  <div class="specimen-label">F1 Header · search open (front end for the existing /search/ results page)</div>
-  <div class="frame resp"><div class="mock">
-    <div class="mod" style="min-height:400px">
-    <header class="hdr">
-      <span class="tag">DS nav (type=search)</span>
-      <div class="util wrap">
-        <button type="button" aria-label="Choose language"><svg><use href="#i-globe"/></svg>Language<svg style="width:12px;height:12px"><use href="#i-chev"/></svg></button>
-        <div class="right"><a href="#"><svg><use href="#i-user"/></svg>Members Hub login</a><span class="dot" aria-hidden="true"></span><a href="#">Join CLA Global</a></div>
-      </div>
-      <div class="mainrow wrap">
-        <a class="logo" href="#" aria-label="CLA Global home"><svg viewBox="0 0 148.35 47.4"><use href="#i-logo"/></svg></a>
-        <nav class="primary-nav" aria-label="Main (search specimen)">
-          <ul><li><button type="button" aria-expanded="false">Who We Are<svg><use href="#i-chev"/></svg></button></li><li><button type="button" aria-expanded="false">What We Do<svg><use href="#i-chev"/></svg></button></li><li><a href="#">Insights</a></li><li><a href="#">Media</a></li><li><a href="#">Locations</a></li></ul>
-          <div class="nav-tools"><button class="iconbtn" type="button" aria-label="Close search" aria-expanded="true" style="background:rgba(125,210,211,.25)"><svg><use href="#i-close"/></svg></button><button class="iconbtn burger" type="button" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button><a class="btn btn-contact" href="#">Contact us</a></div>
-        </nav>
-      </div>
-      <div class="searchp">
-        <label for="q3">Search CLA Global</label>
-        <form role="search" onsubmit="event.preventDefault()"><input id="q3" type="search" value="transfer pricing"><button class="go" type="submit" aria-label="Search"><svg><use href="#i-search"/></svg></button></form>
-        <div class="pop"><b>Popular:</b><a class="chip" href="#">Tax</a><a class="chip" href="#">Network firms</a><a class="chip" href="#">Leadership</a><a class="chip" href="#">Join CLA Global</a></div>
-      </div>
-    </header>
-    </div>
-  </div></div>
-
-  <div class="specimen-label">F2 Mobile navigation · 390px, closed and open</div>
-  <div class="phones">
-    <figure>
-      <div class="frame"><div class="mock">
-        <header class="hdr" style="position:relative">
-          <div class="mainrow wrap"><a class="logo" href="#" aria-label="CLA Global home"><svg viewBox="0 0 148.35 47.4"><use href="#i-logo"/></svg></a>
-            <nav class="primary-nav" aria-label="Mobile (specimen)"><div class="nav-tools"><button class="iconbtn" type="button" aria-label="Search"><svg><use href="#i-search"/></svg></button><button class="iconbtn burger" type="button" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button></div></nav></div>
-        </header>
-        <div class="ph has-media" style="height:560px"><img src="https://www.claglobal.com/media/y2cpxzba/network-firms.jpg?width=400&amp;height=600&amp;quality=80" alt="" loading="lazy" onerror="this.remove()"><span>Page content</span></div>
-      </div></div>
-      <figcaption>Closed: logo, search and menu</figcaption>
-    </figure>
-    <figure>
-      <div class="frame"><div class="mock">
-        <div class="drawer">
-          <div class="top"><a class="logo" href="#" aria-label="CLA Global home"><svg viewBox="0 0 148.35 47.4" style="height:36px"><use href="#i-logo"/></svg></a><button class="iconbtn" type="button" aria-label="Close menu"><svg><use href="#i-close"/></svg></button></div>
-          <form class="search" role="search" onsubmit="event.preventDefault()"><label class="sr" for="q4">Search</label><input id="q4" type="search" placeholder="Search CLA Global"><button type="submit" aria-label="Search"><svg><use href="#i-search"/></svg></button></form>
-          <ul class="acc">
-            <li><button type="button" aria-expanded="false" data-acc>Who We Are<svg><use href="#i-chev"/></svg></button>
-              <ul hidden><li><a class="ov" href="#">Who We Are overview</a></li><li><a href="#">Why CLA Global?</a></li><li><a href="#">Our Brand and Values</a></li><li><a href="#">Leadership</a></li><li><a href="#">Join CLA Global</a></li></ul></li>
-            <li><button type="button" aria-expanded="true" data-acc>What We Do<svg style="transform:rotate(180deg)"><use href="#i-chev"/></svg></button>
-              <ul><li><a class="ov" href="#">What We Do overview</a></li><li><a href="#">Audit</a></li><li><a href="#">Tax</a></li><li><a href="#">Advisory</a></li><li><a href="#">Outsourcing</a></li></ul></li>
-            <li><a href="#">Insights</a></li>
-            <li><a href="#">Media</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          <div class="ctas"><a class="btn btn-primary" href="#">Join CLA Global</a><a class="btn btn-tertiary" href="#"><svg><use href="#i-user"/></svg>Members Hub login</a></div>
-          <div class="lang"><svg><use href="#i-globe"/></svg>Language</div>
-        </div>
-      </div></div>
-      <figcaption>Open: accordion menu, search, both CTAs and language</figcaption>
-    </figure>
-  </div>
-
-  <div class="specimen-label">F4 Breadcrumb · on light and on navy (article and profile pages)</div>
-  <div class="frame resp"><div class="mock">
-    <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="#">Home</a></li><li><a href="#">Insights</a></li><li><span aria-current="page">Reforming, Performing and Transforming India</span></li></ol></nav>
-    <nav class="crumbs rev wrap" aria-label="Breadcrumb (reversed)"><ol><li><a href="#">Home</a></li><li><a href="#">Who We Are</a></li><li><a href="#">Leadership</a></li><li><span aria-current="page">Jennifer (Jen) Leary</span></li></ol></nav>
-  </div></div>
-
-  <div class="specimen-label">F5 Cookie consent · OneTrust banner restyled to the design system</div>
-  <div class="frame resp"><div class="mock">
-    <div class="cookie-demo mod"><div class="ghost"></div>
-      <span class="tag">Restyle of the existing OneTrust banner (CSS only)</span>
-      <div class="ck" role="dialog" aria-labelledby="ck-h" aria-describedby="ck-p">
-        <div class="wrap">
-          <div><h3 id="ck-h">We use cookies</h3><p id="ck-p">CLA Global uses cookies to improve the way CLA Global does business with you or when they are essential to the Site works. CLA Global does not use any cookies to store any personal data or other data that could be used to identify you as an individual. <a href="#">Cookie policy</a></p></div>
-          <div class="acts"><a class="btn btn-rev" href="#">Manage my preferences</a><a class="btn btn-primary" href="#">Accept all cookies</a></div>
-        </div>
-      </div>
-    </div>
-  </div></div>
-
-  <div style="height:80px"></div>
-</div>
-
+<section class="brief" aria-label="About this prototype"><div class="card">
+<h1>CLA Global redesign: full prototype</h1>
+<div><h2>What this is</h2><p>Every CLA Global page layout (L1–L13), page furniture item (F1–F5) and component (C1–C29), redesigned with CLA's new design system in Connect mode with the CLA Global logo. Numbering matches the inventory and the mapping spreadsheet.</p></div>
+<div><h2>Content and scope</h2><p>Copy, navigation, people and imagery are taken from claglobal.com as it is today (long pages are excerpted). Nothing assumes new back-end functionality; optional items are labelled where they appear.</p></div>
+<div><h2>How to review</h2><p>Use the page picker at the top, the <b>Desktop / Mobile</b> toggle (390px) and <b>Show design system modules</b> to see which DS module each section uses. The prototype is clickable: header, menus, search, cards and footer links move between pages.</p></div>
+<div class="fontbox"><h2>Font limitation</h2><p>The design system specifies <b>Museo Sans</b>, a licensed Adobe font that isn't available for this mock-up. <b>Nunito Sans</b> stands in for it, so letter shapes and widths will differ slightly from the final build. Sizes, weights, line heights and spacing follow the design system.</p></div>
+</div></section>
+<div class="hub"><h2>Page layouts</h2><div class="hubgrid"><a href="home.html"><i>L1</i><b>Homepage</b><span>Video hero, callouts, stats, insights carousel</span></a><a href="why-cla-global.html"><i>L2</i><b>Modular landing page</b><span>Why CLA Global? (also Who We Are, Brand and Values, Locations, Members Hub)</span></a><a href="advisory.html"><i>L3</i><b>Service page</b><span>Advisory (also Audit, Tax, Outsourcing, Assurance)</span></a><a href="contact.html"><i>L4</i><b>Form page</b><span>Contact Us and Join CLA Global</span></a><a href="insights.html"><i>L5</i><b>Article listing</b><span>Insights (Media is the same)</span></a><a href="article.html"><i>L6</i><b>Article detail</b><span>66 insight and news pages</span></a><a href="leadership.html"><i>L7</i><b>Team listing</b><span>Leadership</span></a><a href="profile.html"><i>L8</i><b>Person profile</b><span>78 leadership and contact profiles</span></a><a href="firms.html"><i>L9</i><b>Firm directory</b><span>Network and alliance firms</span></a><a href="firm-detail.html"><i>L10</i><b>Member firm detail</b><span>60 firm pages</span></a><a href="legal.html"><i>L11</i><b>Legal / utility + 404</b><span>Legal, privacy, cookie, terms pages and page-not-found</span></a><a href="search.html"><i>L12</i><b>Search results</b><span>Existing site search, now reachable</span></a><a href="campaign.html"><i>L13</i><b>Campaign landing page</b><span>LinkedIn campaign, with its own nav and footer</span></a></div><h2>Furniture and components</h2><div class="hubgrid"><a href="furniture.html"><i>F1–F5</i><b>Page furniture</b><span>Header states, mobile navigation, breadcrumb, cookie banner (footer on every page)</span></a><a href="components.html"><i>C1–C29</i><b>All components and variants</b><span>Every component and furniture item with all its variants on one page</span></a></div></div>
 <script src="js/main.js"></script>
 </body>
 </html>

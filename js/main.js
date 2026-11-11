@@ -36,8 +36,14 @@
       s.setAttribute('aria-expanded',open?'false':'true');
       if(!open){var p=h.querySelector('[data-panel="search"]');p.hidden=false;var i=p.querySelector('input');if(i)i.focus();}
     });
-    var bg=h.querySelector('[data-burger]');
-    if(bg) bg.addEventListener('click',function(){document.getElementById('furniture').scrollIntoView({behavior:'smooth'});});
+    var bg=h.querySelector('[data-burger]'), dr=h.querySelector('[data-drawer]');
+    if(bg) bg.addEventListener('click',function(){
+      if(!dr){var f=document.getElementById('furniture'); if(f) f.scrollIntoView({behavior:'smooth'}); return;}
+      var open=bg.getAttribute('aria-expanded')==='true';
+      bg.setAttribute('aria-expanded',open?'false':'true'); bg.setAttribute('aria-label',open?'Open menu':'Close menu');
+      bg.innerHTML='<svg aria-hidden="true"><use href="#i-'+(open?'menu':'close')+'"/></svg>';
+      dr.hidden=open; h.classList.toggle('rev-open',!open);
+    });
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeAll(); });
 
@@ -53,6 +59,7 @@
   var hv=document.getElementById('heroVideo');
   document.querySelectorAll('[data-pause]').forEach(function(b){
     b.addEventListener('click',function(){
+      var sec=b.closest('section'); var hv=sec?sec.querySelector('video'):null;
       if(!hv) return;
       if(hv.paused){hv.play();b.setAttribute('aria-label','Pause background video');b.innerHTML='<svg><use href="#i-pause"/></svg>';}
       else{hv.pause();b.setAttribute('aria-label','Play background video');b.innerHTML='<svg><use href="#i-play"/></svg>';}
@@ -63,10 +70,10 @@
   // YouTube: load the player only when asked
   document.querySelectorAll('[data-play]').forEach(function(b){
     b.addEventListener('click',function(){
-      var v=document.querySelector('[data-yt]'); if(!v || v.querySelector('iframe')) return;
+      var box=b.closest('.fs')||document; var v=box.querySelector('[data-yt]'); if(!v || v.querySelector('iframe')) return;
       var f=document.createElement('iframe');
       f.src='https://www.youtube-nocookie.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0';
-      f.title='Why join CLA Global?'; f.allow='autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen=true;
+      f.title='CLA Global video'; f.allow='autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen=true;
       v.appendChild(f); var p=v.querySelector('.play'); if(p) p.remove();
     });
   });
@@ -86,6 +93,23 @@
     b.addEventListener('click',function(){
       var col=b.closest('.fcol'); var open=col.classList.toggle('open');
       b.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
+
+  // Campaign film rail: switch the featured film
+  document.querySelectorAll('.films').forEach(function(sec){
+    sec.querySelectorAll('[data-film]').forEach(function(b){
+      b.addEventListener('click',function(){
+        var i=+b.dataset.film, d=(window.FILMS||[])[i]; if(!d) return;
+        sec.querySelectorAll('[data-film]').forEach(function(x){x.removeAttribute('aria-current')});
+        b.setAttribute('aria-current','true');
+        sec.querySelector('[data-title]').textContent=d[0];
+        sec.querySelector('[data-topic]').textContent=d[1];
+        sec.querySelector('[data-body]').textContent=d[2];
+        sec.querySelector('[data-cap]').textContent='Film '+String(i+1).padStart(2,'0')+' of '+String(window.FILMS.length).padStart(2,'0');
+        var src=b.querySelector('img'), st=sec.querySelector('[data-stage] img');
+        if(src&&st) st.src=src.src.replace(/width=\d+&height=\d+/,'width=1280&height=720');
+      });
     });
   });
 })();
